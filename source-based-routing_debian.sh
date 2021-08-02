@@ -92,7 +92,7 @@ set_interfaces()
 {
 # IP NIC
 	while :; do
-		read -p "[+] Entrez l'adresse IPv4 de l'interface : " ETH_IP
+		read -p "[+] Entrez l'adresse IPv4 de l'interface           : " ETH_IP
             [[ $ETH_IP =~ $IP_PATTERN ]] || { echo "/!\\ '$ETH_IP' n'est pas une adresse valide" ; continue; }
         if [[ $ETH_IP =~ $IP_PATTERN ]]; then
         break
@@ -101,7 +101,7 @@ set_interfaces()
 
 # GATEWAY
 	while :; do
-        read -p "[+] Entrez l'adresse IPv4 de la gateway : " ETH_GATEWAY
+        read -p "[+] Entrez l'adresse IPv4 de la gateway            : " ETH_GATEWAY
             [[ $ETH_GATEWAY =~ $IP_PATTERN ]] || { echo "/!\\ '$ETH_GATEWAY' n'est pas une adresse valide." ; continue; }
         if [[ $ETH_GATEWAY =~ $IP_PATTERN ]]; then
         break
@@ -110,7 +110,7 @@ set_interfaces()
 
 # NETWORK
 	while :; do
-        read -p "[+] Entrez l'adresse IPv4 du réseau : " ETH_NETWORK
+        read -p "[+] Entrez l'adresse IPv4 du réseau                : " ETH_NETWORK
             [[ $ETH_NETWORK =~ $IP_PATTERN ]] || { echo "/!\\ '$ETH_NETWORK' n'est pas une adresse valide." ; continue; }
         if [[ $ETH_NETWORK =~ $IP_PATTERN ]]; then
         break
@@ -130,7 +130,7 @@ set_interfaces()
 
 # PRIMARY DNS
 	while :; do
-		read -p "[+] Entrez l'adresse du serveur DNS primaire : " ETH_DNS_1
+		read -p "[+] Entrez l'adresse du serveur DNS primaire       : " ETH_DNS_1
             [[ $ETH_DNS_1 =~ $IP_PATTERN ]] || { echo "/!\\ '$ETH_DNS_1' n'est pas une adresse valide" ; continue; }
         if [[ $ETH_DNS_1 =~ $IP_PATTERN ]]; then
         break
@@ -139,7 +139,7 @@ set_interfaces()
 
 # SECONDARY DNS
 	while :; do
-		read -p "[+] Entrez l'adresse du serveur DNS secondaire : " ETH_DNS_2
+		read -p "[+] Entrez l'adresse du serveur DNS secondaire     : " ETH_DNS_2
             [[ $ETH_DNS_2 =~ $IP_PATTERN ]] || { echo "/!\\ '$ETH_DNS_2' n'est pas une adresse valide" ; continue; }
         if [[ $ETH_DNS_2 =~ $IP_PATTERN ]]; then
         break
